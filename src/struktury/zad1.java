@@ -6,11 +6,12 @@ import java.util.Scanner;
 
 public class zad1 {
     private int[] tablica;
-    private int top = 0;
+    private int top = 1;
+
 
     public void createTable(){
         Scanner nw = new Scanner(System.in);
-        System.out.println("Podaj wartość tablicy");
+        System.out.println("Podaj wartość tablicy ");
         tablica = new int[Integer.parseInt(nw.nextLine())];
 
 
