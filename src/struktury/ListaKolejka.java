@@ -104,7 +104,7 @@ public class ListaKolejka {
             }else if (value ==tmp.getValue()) {
                     tmp.getPrev().setNext(tmp.getNext());
                     tmp.getNext().setPrev(tmp.getPrev());
-                    
+
             }
                 tmp = tmp.getNext();
             }

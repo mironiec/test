@@ -1,4 +1,5 @@
 import struktury.ListaKolejka;
+import struktury.zad1;
 
 public class main {
 
@@ -15,8 +16,29 @@ public class main {
         lista.print();
     }
 
+    public static void initTable(){
+        zad1 zad = new zad1();
+        zad.createTable();
+        zad.createVolume();
+        System.out.println(zad.numerate());
+
+    }
+
+    public static void InitTable2(){
+        zad1 zad = new zad1();
+        zad1 zad2 = new zad1();
+        zad1 zad3 = new zad1();
+        zad.createTable();
+        zad.createVolume();
+        zad2.createTable();
+        zad2.createVolume();
+        zad3.add_Table(zad.getTablica(),zad2.getTablica());
+        for(int e : zad3.getTablica()) {
+        System.out.println(e);}
+    }
+
     public static void main(String[] args) {
-        initLista();
+        InitTable2();
 
     }
 }
