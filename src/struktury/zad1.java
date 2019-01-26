@@ -35,7 +35,7 @@ public class zad1 {
 
     public boolean numerate(){
         boolean wart = true;
-        for (int i = 0; i<tablica.length; i++) {
+        for (int i = 0; i<tablica.length-1; i++) {
             if (tablica[i] > tablica[i+1] ) continue;
             if (tablica[i] < tablica[i+1]) { wart = false; break;}
         }
