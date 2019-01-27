@@ -34,7 +34,7 @@ public class main {
         zad2.createVolume();
         zad3.add_Table(zad.getTablica(),zad2.getTablica());
         for(int e : zad3.getTablica()) {
-        System.out.println(e);}
+        System.out.print(e + " ");}
     }
 
     public static void main(String[] args) {
