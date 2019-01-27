@@ -72,7 +72,7 @@ public class main {
 
 
     public static void initSito(){
-        Sito sito = new Sito(100);
+        Sito sito = new Sito(1000000);
         sito.szukaj();
 
         sito.print();

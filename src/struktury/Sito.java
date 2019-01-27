@@ -15,7 +15,7 @@ public class Sito {
     }
 
     public void createTable(int size){
-        tab = new boolean[size];
+        tab = new boolean[size + 1];
         for (int i = 0; i <tab.length ; i++) {
             tab[i] = true;
         }
@@ -28,6 +28,11 @@ public class Sito {
             indeks = i;
             for (int y = (indeks+indeks) ; y<tab.length; y=y+ indeks) if (tab[y] == true) tab[y] = false;
         }
+    }
+
+
+    public boolean sprawdz(int n) {
+        return tab[n];
     }
 
     @Override
