@@ -43,6 +43,11 @@ public class main {
     public static void InitBinary(int[] tablica){
         BinarySearch bin = new BinarySearch(tablica,5);
         System.out.println(bin.szukaj());
+        BinarySearch binTest = new BinarySearch();
+        binTest.setTablica(tablica);
+        binTest.setValue(8);
+        System.out.println(binTest.szukaj());
+
     }
 
     public static void main(String[] args) {

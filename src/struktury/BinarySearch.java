@@ -2,14 +2,14 @@ package struktury;
 
 public class BinarySearch {
 
-    public  static int[] tablica;
-    public  static int lewo = 0;
-    public  static int prawo = 0;
+    private  static int[] tablica;
+    private  static int lewo = 0;
+    private  static int prawo = 0;
     private static int value;
     private static String czy_jest;
     private static int indeks;
 
-    public String szukaj() {
+    public static String szukaj() {
         prawo = tablica.length-1;
         while (lewo < prawo) {
             int srodek = (lewo + prawo) / 2;
@@ -28,6 +28,9 @@ public class BinarySearch {
     public BinarySearch(int[] tablica,int value ) {
         this.tablica = tablica;
         this.value = value;
+    }
+
+    public BinarySearch() {
     }
 
     public void setTablica(int[] tablica) {
