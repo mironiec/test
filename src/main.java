@@ -1,10 +1,12 @@
 import struktury.BinarySearch;
 import struktury.ListaKolejka;
+import struktury.Sito;
 import struktury.zad1;
 
 public class main {
 
     public static int[] tablica = new int[10];
+
 
     public static void initLista() {
         ListaKolejka lista = new ListaKolejka();
@@ -47,7 +49,7 @@ public class main {
 
         start = System.nanoTime();
 
-        BinarySearch bin = new BinarySearch(tablica, 5);
+        BinarySearch bin = new BinarySearch(tablica, 1);
         stop = System.nanoTime();
         System.out.println(bin.szukaj());
 
@@ -59,7 +61,7 @@ public class main {
 
         BinarySearch binTest = new BinarySearch();
         binTest.setTablica(tablica);
-        binTest.setValue(5);
+        binTest.setValue(1);
         stop = System.nanoTime();
         System.out.println(binTest.szukaj());
 
@@ -68,11 +70,18 @@ public class main {
         System.out.println("czas: " + (stop - start));
     }
 
+
+    public static void initSito(){
+        Sito sito = new Sito(100);
+        sito.szukaj();
+
+        sito.print();
+    }
+
     public static void main(String[] args) {
 
-        for (int i = 0; i < tablica.length; i++) tablica[i] = i;
 
-        InitBinary(tablica);
+        initSito();
 
     }
 }
