@@ -1,7 +1,10 @@
+import struktury.BinarySearch;
 import struktury.ListaKolejka;
 import struktury.zad1;
 
 public class main {
+
+    public static int[] tablica = new int[10];
 
     public static void initLista(){
         ListaKolejka lista = new ListaKolejka();
@@ -37,8 +40,16 @@ public class main {
         System.out.print(e + " ");}
     }
 
+    public static void InitBinary(int[] tablica){
+        BinarySearch bin = new BinarySearch(tablica,5);
+        System.out.println(bin.szukaj());
+    }
+
     public static void main(String[] args) {
-        InitTable2();
+
+        for (int i=0;i<tablica.length;i++) tablica[i] = i;
+
+        InitBinary(tablica);
 
     }
 }
