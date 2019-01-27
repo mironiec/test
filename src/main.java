@@ -1,7 +1,4 @@
-import struktury.BinarySearch;
-import struktury.ListaKolejka;
-import struktury.Sito;
-import struktury.zad1;
+import struktury.*;
 
 public class main {
 
@@ -78,10 +75,14 @@ public class main {
         sito.print();
     }
 
+    public static void silniaInit(int n){
+        Silnia silnia = new Silnia();
+        System.out.println(silnia.rekurencja(n));
+    }
     public static void main(String[] args) {
+        silniaInit(5);
 
 
-        initSito();
 
     }
 }
