@@ -16,6 +16,7 @@ public class BinarySearch {
             if (tablica[srodek] < value) {
                 lewo = srodek + 1;
             } else prawo = srodek;
+
         }
         if (tablica[lewo] == value) indeks = lewo;
         else indeks = -1;
@@ -26,18 +27,18 @@ public class BinarySearch {
 
 
     public BinarySearch(int[] tablica,int value ) {
-        this.tablica = tablica;
-        this.value = value;
+        BinarySearch.tablica = tablica;
+        BinarySearch.value = value;
     }
 
     public BinarySearch() {
     }
 
     public void setTablica(int[] tablica) {
-        this.tablica = tablica;
+        BinarySearch.tablica = tablica;
     }
 
     public void setValue(int value) {
-        this.value = value;
+        BinarySearch.value = value;
     }
 }

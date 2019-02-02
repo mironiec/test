@@ -1,4 +1,5 @@
 import struktury.*;
+import struktury.dijkstra.Dijkstra;
 
 public class main {
 
@@ -48,7 +49,7 @@ public class main {
 
         BinarySearch bin = new BinarySearch(tablica, 1);
         stop = System.nanoTime();
-        System.out.println(bin.szukaj());
+        System.out.println(BinarySearch.szukaj());
 
         //stop = System.nanoTime();
 
@@ -60,7 +61,7 @@ public class main {
         binTest.setTablica(tablica);
         binTest.setValue(1);
         stop = System.nanoTime();
-        System.out.println(binTest.szukaj());
+        System.out.println(BinarySearch.szukaj());
 
         //stop = System.nanoTime();
 
@@ -79,8 +80,10 @@ public class main {
         Silnia silnia = new Silnia();
         System.out.println(silnia.rekurencja(n));
     }
+
+
     public static void main(String[] args) {
-        silniaInit(5);
+        Dijkstra.run();
 
 
 
