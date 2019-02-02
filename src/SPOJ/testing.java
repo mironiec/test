@@ -1,21 +1,28 @@
 package SPOJ;
 
 
+import struktury.BinarneDrzewoPrzeszukiwan;
+import struktury.BinarySearch;
 
 public class testing {
 
-    public static int isYes(int[] tab, int is) {
-        int size = tab.length;
-        int top = 0;
-        while (top <size) {
-            if (tab[top]==is) return 1;
-            top++;
-        }
-        return -1;
+     public static void BST(){
+        BinarneDrzewoPrzeszukiwan bst = new BinarneDrzewoPrzeszukiwan();
+        bst.dodaj(5);
+        bst.dodaj(2);
+        bst.dodaj(7);
+        bst.dodaj(10);
+        bst.dodaj(3);
+        bst.dodaj(6);
+        bst.dodaj(15);
+        bst.dodaj(21);
+        bst.dodaj(1);
+        bst.usun(1);
+         System.out.println(bst);
     }
     public static void main(String[] args) throws NullPointerException{
-        int[] my_array = {25, 14, 56, 15, 36, 56, 77, 18, 29, 49};
-        System.out.println(isYes(my_array,182));
+        BST();
+
     }
 }
 
