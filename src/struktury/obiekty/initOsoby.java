@@ -35,13 +35,14 @@ public class initOsoby {
     public static void main(String[] args) {
 
         System.out.println(lista);
-        addOsobe("Mirek","Nieckarz",39,01);
+        addOsobe("M....","N.....",39,01);
         System.out.println((lista));
-        addOsobe("Noemi","Grzeskowiak",33,12);
+        addOsobe("N....","G.....",33,12);
         System.out.println("cos " +lista.toArray().length);
         System.out.println(lista);
         System.out.println("indeks " + lista.get(1).getFirstName().replace(lista.get(1).getFirstName(),"Noemisia"));
-
+        System.out.println("oo %%d" +lista.get(0).getIndex());
+        System.out.println(lista);
 
 
     }
