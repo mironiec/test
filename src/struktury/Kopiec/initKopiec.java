@@ -1,6 +1,7 @@
 package struktury.Kopiec;
 
 import struktury.SortowaniePrzezZliczanie.CountingSort;
+import struktury.insertSort.insertSort;
 
 import java.util.Arrays;
 
@@ -21,7 +22,8 @@ public class initKopiec {
         wywolaj();
         //new SortowanieKopiec().sortuj(tab);
         //new BubbleSort().sortujBubble(tab);
-        System.out.println(Arrays.toString(new CountingSort().sortuj(tab,18)));
+
+        System.out.println(Arrays.toString(new insertSort().sortuj(tab)));
 
     }
 }
