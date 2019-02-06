@@ -84,11 +84,12 @@ public class Users implements Cloneable {
 
     public static void Lista_Users(LinkedList<Users> lista) {
         for (Users list : lista) {
-            System.out.println(list);
+            System.out.println("Użytkonik : " + list.getName() + " Email : " + list.getEmail());
 
         }
     }
 
 
 }
+
 

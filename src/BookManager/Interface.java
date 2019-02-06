@@ -48,9 +48,15 @@ public class Interface  {
     public static void ListaWypozyczonychKsiązek() throws CloneNotSupportedException{
 
         for (Users userBook: BookManager.listaUsers) {
-            if (userBook.equals(BookManager.listaUsers.get(log.getActive_User(BookManager.listaUsers)))) {
-                if (BookManager.listaUsers.get(log.getActive_User(BookManager.listaUsers)).getWypozyczone()!=null)
-                System.out.println(userBook + "Numer indeksu ksiązki aby oddac  " + BookManager.listaUsers.lastIndexOf(userBook));
+            if (userBook.getName().equals(BookManager.listaUsers.get(log.getActive_User(BookManager.listaUsers)).getName())) {
+                if (!userBook.getWypozyczone().isEmpty()) {
+                    int i = userBook.getWypozyczone().size();
+                    for (int j = 0; j < i; j++) {
+                        System.out.println("Autor " + userBook.getWypozyczone().get(j).getAutor()
+                        + "tYTUŁ" + userBook.getWypozyczone().get(j).getTytul());
+                    }
+
+                }
             }
         }
         EkranZalogowanyOpcje();
