@@ -6,6 +6,8 @@ public class Users implements Cloneable {
 
     private String Name;
     private int Id;
+    private String haslo;
+    private String email;
     private LinkedList<Books> wypozyczone = new LinkedList<Books>();
 
     public Users() {
@@ -14,6 +16,23 @@ public class Users implements Cloneable {
     public Users(String name, int id) {
         Name = name;
         Id = id;
+    }
+
+
+    public String getHaslo() {
+        return haslo;
+    }
+
+    public void setHaslo(String haslo) {
+        this.haslo = haslo;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getName() {
@@ -62,5 +81,14 @@ public class Users implements Cloneable {
                 ", wypozyczone=" + wypozyczone +
                 '}';
     }
+
+    public static void Lista_Users(LinkedList<Users> lista) {
+        for (Users list : lista) {
+            System.out.println(list);
+
+        }
+    }
+
+
 }
 
